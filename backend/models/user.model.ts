@@ -16,6 +16,18 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    college: {
+      type: String,
+      required: true,
+    },
+    major: {
+      type: String,
+      required: true,
+    },
+    year: {
+      type: String,
+      required: true,
+    },
     profilePicture: {
       type: String,
       default: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png",
