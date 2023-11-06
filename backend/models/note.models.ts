@@ -7,17 +7,27 @@ const noteSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    title: {
+    classTitle: {
       type: String,
-      required: false,
+      required: true,
       unique: false,
     },
-    classInfo: {
+    classQtr: {
       type: String,
-      required: false,
+      required: true,
+      unique: false,
+    },
+    classYr: {
+      type: String,
+      required: true,
       unique: false,
     },
     description: {
+      type: String,
+      required: false,
+      unique: false,
+    },
+    instructor: {
       type: String,
       required: false,
       unique: false,
