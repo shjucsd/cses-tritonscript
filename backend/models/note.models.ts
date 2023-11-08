@@ -29,7 +29,7 @@ const noteSchema = new mongoose.Schema(
     },
     instructor: {
       type: String,
-      required: false,
+      required: true,
       unique: false,
     },
     isPublic: {
